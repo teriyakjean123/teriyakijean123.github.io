@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="mess_text">HAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHAHAHAHAAHHAH JOKE AKEN!</h1>
+            </div>
+            <div class="gif_container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XaPJxy0d0K0?si=0UAYkzH7OzKDvOHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "suButton" onclick="moveButton()">X:Suicide</button>
+                <button class="btn" id = "prcButton" onclick="nextPage()">Proceed!</button>
+                <button class="btn" id="giButton" onmouseover="moveButton()" onclick="moveButton()">O: Give Up!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "index2.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('suButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('giButton').offsetHeight) - 48;
+                        document.getElementById('suButton').style.left = `${x}px`;
+                        document.getElementById('giButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="mess_text">Hmm what can i say ba, im grateful to you i think i know that life and stuff is so hard but</h1>
+                <h1 class="mess_text">i want to remind you that you'll be fine hehe if life is on top of the hill and you can't go down</h1>
+                <h1 class="mess_text">stay on the top of the hill and figure your way down. HAHAAHHA weird quote. Anyway, all i want to say is</h1>
+                <h1 class="mess_text">you are special to others and i want the best of you!</h1>
+            </div>
+            <div class="gif_container">
+                <iframe src="https://giphy.com/embed/l56r3x5ZRZ2T7fs4tu" width="380" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Proceed!</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">Exit!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "hey.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

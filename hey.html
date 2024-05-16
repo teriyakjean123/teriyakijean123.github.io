@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+
+    </head> 
+    <body>
+        <div class="container">
+            <div>
+                <h1 class="mess_text">Let's stay on top of the hill and be afraid!</h1>
+            </div>
+            <div class="gif_container">
+                <iframe src="https://giphy.com/embed/Y4z9olnoVl5QI" width="480" height="357" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "prcButton" onclick="nextPage()">Proceed!</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "last.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>

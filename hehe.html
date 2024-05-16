@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./index2.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">I hope this will cheer you up somehow hehe ☺</h1>
+                <h1 class = "header_text">This is just a token of my gratitude.</h1>
+            </div>
+            <div class="gif_container">
+                <iframe src="https://giphy.com/embed/WVJe7R15XJjBYT5qHX" width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+            </div>
+            <div>
+                <h1 class="header_text">Hi this bunny wants you to proceed please!</h1>
+            </div>
+            <div class = "buttons">
+                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "message.html";
+                    }
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
